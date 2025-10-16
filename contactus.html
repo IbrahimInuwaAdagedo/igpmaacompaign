@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - IGP MOHAMMAD ABUBAKAR ADAMU Campaign</title>
+  <meta name="description" content="Get in touch with the IGP Mohammad Abubakar Adamu Campaign team for inquiries, partnerships, and support.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FIX CONTACT PAGE LAYOUT -->
+  <style>
+    .contact {
+      width: 90%;
+      max-width: 800px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .contact h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    form button {
+      background: #004aad;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #0060d4;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-info h3 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .contact {
+        width: 95%;
+        padding: 20px;
+        margin: 30px auto;
+      }
+
+      form input,
+      form textarea,
+      form button {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">IGP MOHAMMAD ABUBAKAR ADAMU Rtd.</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="messageus.html" class="active">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">
+      If you would like to reach out to the campaign team, please use the form below or send us a message directly.
+      We value your feedback and support.
+    </p>
+
+    <br>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Other Ways to Reach Us</h3>
+      <p><strong>Email:</strong> info@igpadamucampaign.org</p>
+      <p><strong>Phone:</strong> +234 800 123 4567</p>
+      <p><strong>Address:</strong> Campaign Office, Lafia, Nasarawa State, Nigeria</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 IGP Mohammad Abubakar ADAMU Campaign | All Rights Reserved</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
