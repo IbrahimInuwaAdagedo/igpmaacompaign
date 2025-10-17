@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - IGP Mohammad Abubakar Adamu Campaign</title>
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f6fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #002147;
+      color: #fff;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #f4b400;
+      border-bottom: 2px solid #f4b400;
+      padding-bottom: 3px;
+    }
+
+    /* ===== NEWS SECTION ===== */
+    .news {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .news h2 {
+      font-size: 2rem;
+      color: #002147;
+      margin-bottom: 25px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .news h2::after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      background: #f4b400;
+      left: 20%;
+      bottom: -8px;
+      border-radius: 5px;
+    }
+
+    .news article {
+      background: #fff;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .news article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .news h3 {
+      color: #002147;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .news p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #001b36;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .news {
+        padding: 15px;
+      }
+
+      .news h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">IGP MOHAMMAD ABUBAKAR ADAMU (Rtd.)</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News Updates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- NEWS SECTION -->
+  <section id="news" class="news">
+    <h2>Latest News & Updates</h2>
+
+    <article>
+      <h3>Campaign Launch</h3>
+      <p>The official campaign of IGP Mohammad Abubakar Adamu has commenced with a renewed call for peace, unity, and development across Nigeria. The event witnessed community leaders, youth representatives, and security stakeholders reaffirming their support for a safer and more united nation.</p>
+    </article>
+
+    <article>
+      <h3>Youth Engagement Program</h3>
+      <p>As part of his vision for youth empowerment, IGP Adamu launched an initiative providing mentorship, leadership training, and skill acquisition opportunities for young Nigerians, ensuring their active participation in national development.</p>
+    </article>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 IGP Mohammad Abubakar Adamu Campaign | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
