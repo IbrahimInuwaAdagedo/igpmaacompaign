@@ -119,5 +119,17 @@
   <footer>
     <p>&copy; 2025 IGP Mohammad Abubakar Adamu Campaign | All Rights Reserved.</p>
   </footer>
+   <script>
+  const toggle = document.createElement('div');
+  toggle.className = 'menu-toggle';
+  toggle.innerHTML = '&#9776;';
+  document.querySelector('.navbar').prepend(toggle);
+
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 </body>
 </html>
+
