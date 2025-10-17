@@ -1,22 +1,22 @@
 /* ===== RESET & BASE STYLES ===== */
-img {
-  max-width: 100%;
-  height: auto;
-}
-body {
-  overflow-x: hidden;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   color: #222;
   background-color: #f9f9f9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ===== HEADER & NAVBAR ===== */
@@ -66,7 +66,14 @@ header {
   text-decoration: underline;
 }
 
-/* ===== HERO SECTION (OPTIONAL) ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== HERO SECTION ===== */
 .hero {
   height: 100vh;
   display: flex;
@@ -120,7 +127,7 @@ header {
 /* ===== ABOUT SECTION ===== */
 .about {
   max-width: 1000px;
-  margin: 120px auto 2rem auto; /* 120px to offset fixed navbar */
+  margin: 120px auto 2rem auto;
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
@@ -158,16 +165,6 @@ h2, h3 {
   margin-left: 20px;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  background: #006400;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-}
-
 /* ===== GALLERY ===== */
 .gallery-grid {
   display: grid;
@@ -181,43 +178,11 @@ footer {
   border-radius: 8px;
 }
 
-/* ===== CONTACT FORM ===== */
-.contact form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact input, 
-.contact textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.contact button {
-  padding: 12px;
-  background: #006400;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.contact button:hover {
-  background: #004d00;
-}
-
 /* ===== SLIDESHOW ===== */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .mySlides {
@@ -226,7 +191,8 @@ footer {
 
 .mySlides img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  height: auto;
 }
 
 .caption {
@@ -234,11 +200,11 @@ footer {
   font-size: 18px;
   padding: 10px;
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   width: 100%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 0 0 8px 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 10px 10px;
 }
 
 .prev, .next {
@@ -248,23 +214,23 @@ footer {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   transition: 0.3s;
-  user-select: none;
   border-radius: 4px;
+  user-select: none;
 }
 
 .next { right: 0; }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.6);
 }
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
+  height: 14px;
+  width: 14px;
+  margin: 0 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -275,58 +241,7 @@ footer {
   background-color: #006400;
 }
 
-/* ===== RESPONSIVE ===== */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #006400;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 20px 0;
-    text-align: center;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-}
-/* === CONTACT PAGE FIXES === */
-
-/* Make sure no element causes horizontal scrolling */
-body, html {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/* Fix contact section alignment */
+/* ===== CONTACT SECTION ===== */
 .contact {
   width: 90%;
   max-width: 800px;
@@ -338,16 +253,17 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Center content nicely */
-.contact h2, .contact p, .contact-info {
+.contact h2, 
+.contact p, 
+.contact-info {
   text-align: center;
 }
 
-/* Make form responsive */
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .contact input,
@@ -380,12 +296,66 @@ body, html {
   background: #0060d4;
 }
 
-/* Responsive adjustment */
+/* ===== FOOTER ===== */
+footer {
+  background: #006400;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
+  /* Navbar */
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #006400;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* Contact */
   .contact {
     width: 95%;
     padding: 20px;
     margin: 40px auto;
   }
-}
 
+  /* Slideshow */
+  .caption {
+    font-size: 14px;
+  }
+
+  .prev, .next {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
