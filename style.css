@@ -381,3 +381,57 @@ body, html {
     margin: 40px auto;
   }
 }
+/* ===== EXTRA MOBILE FIXES ===== */
+
+/* Make all containers fit screen width */
+.container, .about, .subsection, .timeline, .achievements {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Ensure images and tables never overflow */
+img, table {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make tables scrollable horizontally on small screens */
+.timeline table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .about {
+    margin-top: 100px;
+    padding: 1rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
