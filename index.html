@@ -297,81 +297,95 @@
     <a href="about.html"class="btn">Learn More</a>
   </div>
 </section>
-
 <!-- ABOUT SECTION -->
-<section id="about" class="about">
-  <a href="about.html">About IPG M.A.A </a>
-  <p>Clic on About IPG M.A.A </p>
+<section id="about" class="section about">
+  <div class="inner">
+    <h2>About IGP M.A.A</h2>
+    <p>
+      Learn more about the life, leadership, and achievements of
+      <strong>Inspector General of Police Mohammad Abubakar Adamu</strong>.
+    </p>
+    <a href="about.html" class="link-btn">Click here to view full details</a>
+  </div>
 </section>
 
 <!-- VISION SECTION -->
-<section id="vision" class="about">
-  <a href="vision.html">Vision</a>>
-  <p>Click on vision to see the vision of IGP MOHAMMED ABUBKAR ADAMU</p>
+<section id="vision" class="section vision">
+  <div class="inner">
+    <h2>Vision</h2>
+    <p>
+      Discover the vision and mission of <strong>IGP Mohammad Abubakar Adamu</strong> —
+      focused on leadership, integrity, youth empowerment, and community development.
+    </p>
+    <a href="vision.html" class="link-btn">Click to view Vision & Mission</a>
+  </div>
 </section>
 
 <!-- GALLERY SECTION (SLIDESHOW) -->
-<section id="gallery" class="gallery">
-<a href="gallery.html">Click on Gallery to see what IGP M.A.A has done</a>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/youth-Health-Empowerment.jpg2.jpg" alt="">
+<section id="gallery" class="section gallery">
+  <div class="inner">
+    <h2>Gallery — Events & Outreach</h2>
+    <p>Click below to see photos of IGP M.A.A in action.</p>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/youth-Health-Empowerment.jpg2.jpg" alt="Youth Health Empowerment">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/with-the-President.jpg" alt="With the President">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/IGP-with-A.A.SULE.jpg" alt="With Governor A.A. Sule">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/Masses-support.jpg" alt="Masses Support Event">
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="mySlides fade">
-      <img src="images/with-the-President.jpg" alt="">
+
+    <!-- Dots navigation -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
     </div>
-    <div class="mySlides fade">
-      <img src="images/IGP-with-A.A.SULE.jpg" alt="">
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Masses-support.jpg" alt="">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
+
+    <a href="gallery.html" class="link-btn">Open Full Gallery</a>
   </div>
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="contact">
- <a href="messageus.html">Click on Contacts to share your opinon</a>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+<section id="contact" class="section contact">
+  <div class="inner">
+    <h2>Contact</h2>
+    <p>We value your feedback. Share your opinion or message below.</p>
 
-
-  <!-- GALLERY -->
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-        <img src="images/whenIG.jpg" alt="while serving as inspector general of police between 2019 to 2022">
-      <img src="images/youth-Health-Empowerment.jpg2.jpg" alt="Youth Empowerment">
-      <img src="images/with-the-President.jpg" alt="With the President">
-      <img src="images/IGP-with-A.A.SULE.jpg" alt="With Gov. Sule">
-      <img src="images/Masses-support.jpg" alt="Mass Support">
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
+    <form action="messageus.html" method="post" class="contact-form">
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="primary-btn">Send Message</button>
     </form>
-  </section>
+  </div>
+</section>
+
+<!-- EXTRA GALLERY PREVIEW -->
+<section class="section gallery-preview">
+  <div class="inner">
+    <h2>Photo Highlights</h2>
+    <div class="gallery-grid">
+      <img src="images/whenIG.jpg" alt="While serving as Inspector General of Police (2019–2022)">
+      <img src="images/youth-Health-Empowerment.jpg2.jpg" alt="Youth Empowerment">
+      <img src="images/with-the-President.jpg" alt="With the President">
+      <img src="images/IGP-with-A.A.SULE.jpg" alt="With Governor Sule">
+      <img src="images/Masses-support.jpg" alt="Mass Support">
+    </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
@@ -387,6 +401,7 @@
   </script>
 </body>
 </html>
+
 
 
 
