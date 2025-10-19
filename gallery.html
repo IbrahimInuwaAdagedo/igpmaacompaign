@@ -59,8 +59,9 @@
       <div class="mySlides fade"><img src="images/youth-Empowerment.jpg"><div class="caption">Youth Empowerment</div></div>
       <div class="mySlides fade"><img src="images/youth-Health-Empowerment.jpg2.jpg"><div class="caption">Youth Health Empowerment</div></div>
 
-      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      <a class="prev" onclick="currentSlide(slideIndex - 1)">&#10094;</a>
+      <a class="next" onclick="currentSlide(slideIndex + 1)">&#10095;</a>
+
     </div>
     <div class="dot-container" id="dots1"></div>
 
@@ -72,46 +73,42 @@
   </footer>
 
   <script>
-    let slideIndex = [1, 1];
-    let slideId = ["slideshow1", "slideshow2"];
-    let dotContainerIds = ["dots1", "dots2"];
+  let slideIndex = 0;
 
-    slideId.forEach((id, i) => {
-      const slides = document.querySelectorAll(`#${id} .mySlides`);
-      const dotsContainer = document.getElementById(dotContainerIds[i]);
-      dotsContainer.innerHTML = "";
-      slides.forEach((_, j) => {
+  function showSlides() {
+    const slides = document.querySelectorAll("#slideshow1 .mySlides");
+    const dotsContainer = document.getElementById("dots1");
+
+    // Create dots only once
+    if (dotsContainer && dotsContainer.innerHTML === "") {
+      slides.forEach((_, i) => {
         const dot = document.createElement("span");
         dot.className = "dot";
-        dot.onclick = () => currentSlide(j + 1, i);
+        dot.onclick = () => currentSlide(i + 1);
         dotsContainer.appendChild(dot);
       });
-      showSlides(slideIndex[i], i);
-    });
-
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
     }
 
-    function currentSlide(n, no) {
-      showSlides(slideIndex[no] = n, no);
-    }
+    slides.forEach(slide => slide.style.display = "none");
+    const dots = document.querySelectorAll("#dots1 .dot");
 
-    function showSlides(n, no) {
-      let slides = document.querySelectorAll(`#${slideId[no]} .mySlides`);
-      let dots = document.querySelectorAll(`#${dotContainerIds[no]} .dot`);
-      if (n > slides.length) slideIndex[no] = 1;
-      if (n < 1) slideIndex[no] = slides.length;
-      slides.forEach(slide => slide.style.display = "none");
-      dots.forEach(dot => dot.classList.remove("active"));
-      slides[slideIndex[no] - 1].style.display = "block";
-      dots[slideIndex[no] - 1].classList.add("active");
-    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
 
-    setInterval(() => {
-      plusSlides(1, 0);
-      plusSlides(1, 1);
-    }, 10000);
-  </script>
+    slides[slideIndex - 1].style.display = "block";
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[slideIndex - 1].classList.add("active");
+
+    setTimeout(showSlides, 10000); // Auto-change every 10s
+  }
+
+  function currentSlide(n) {
+    slideIndex = n - 1;
+    showSlides();
+  }
+
+  showSlides();
+</script>
 </body>
+
 
