@@ -3,237 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - IGP MOHAMMAD ABUBAKAR ADAMU Campaign</title>
+  <title>Gallery - IGP Mohammad Abubakar Adamu Campaign</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f7fdf8;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #064420;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    h2 {
+      color: #0b6623;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 900px;
+      margin: 30px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+
+    .mySlides {
+      display: none;
+      position: relative;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      width: 100%;
+      padding: 15px;
+      font-size: 0.95em;
+      text-align: left;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 10px 15px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: translateY(-50%);
+    }
+
+    .next { right: 10px; }
+    .prev { left: 10px; }
+
+    .prev:hover, .next:hover {
+      background-color: #0b6623;
+    }
+
+    .dot-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #0b6623;
+    }
+
+    footer {
+      background: #064420;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
+
+  <!-- HEADER -->
+  <header>
     <nav class="navbar">
-      <div class="logo">IGP MOHAMMAD ABUBAKAR ADAMU Rtd.</div>
+      <div class="logo">IGP Mohammad Abubakar Adamu Rtd.</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="GALLERY.html"> GALLERY </a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
-<section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/youth-Health-Empowerment.jpg2.jpg" alt="IGP Adamu Abubakar Muhammad at youth youth-Health-Empowerment">
-      <img src="images/with-the-President.jpg" alt="Meeting with Community">
-      <img src="images/IGP-with-A.A.SULE.jpg" alt="Youth Empowerment Program">
-      <img src="images/Masses-support.jpg" alt="Youth Empowerment Program">
+
+  <!-- SECTION 1: COMMUNITY & CONSULTATION -->
+  <section class="gallery-section">
+    <h2>Community & Consultation</h2>
+    <div class="slideshow-container" id="slideshow1">
+      <div class="mySlides fade">
+        <img src="images/IGANDH.jfif" alt="">
+        <div class="caption">Flag-off of free medical outreach and drug distribution in Akwanga by IGP Mohammad Abubakar Adamu CFR, accompanied by his wife and community leaders. (Oct 2, 2025)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Comsn.jfif" alt="">
+        <div class="caption">Commissioning of IGP M.A. Adamu Offices 1 & 2 at Ungwan Jaba, Lafia by G7 Networks, led by Alh. Idris (Adon Garin Akurba).</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/med.jfif" alt="">
+        <div class="caption">Free medical outreach in Akwanga — an initiative to support women, children, and the elderly with essential healthcare services.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/Nasseggon.jfif" alt="">
+        <div class="caption">Consultative visit to Nasarawa Eggon — strengthening unity and relationships with local leaders and community stakeholders.</div>
+      </div>
+
+      <!-- Controls -->
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1,0)"></span>
+      <span class="dot" onclick="currentSlide(2,0)"></span>
+      <span class="dot" onclick="currentSlide(3,0)"></span>
+      <span class="dot" onclick="currentSlide(4,0)"></span>
     </div>
   </section>
-  </section>
-  <!-- SLIDESHOW -->
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/IGANDH.jfif" alt="Campaign Event">
-      <div class="caption">Muhammad Abubakar Adamu CFR, NPM, mni, accompanied by his wife Hajiya Rukaiya Adamu, Dan Galadima, Barrister Musa Hussaini, Alh Abubakar Sandaji (Turakin Lafia), Alhaji Tanimu Tancy, and prominent figures., flagged off a free medical outreach and drug distribution in Akwanga, targeting vulnerable groups like women, children, and the elderly. 
 
-Muhammad Abubakar Adamu CFR, NPM, mni's free medical outreach and drug distribution initiative in Akwanga showcases his dedication to giving back to the community. 
+  <!-- SECTION 2: LEADERSHIP & EMPOWERMENT -->
+  <section class="gallery-section">
+    <h2>Leadership & Empowerment</h2>
+    <div class="slideshow-container" id="slideshow2">
+      <div class="mySlides fade">
+        <img src="images/with-the-President.jpg" alt="">
+        <div class="caption">IGP M.A. Adamu with the President of the Federal Republic of Nigeria — discussing national security and progress.</div>
+      </div>
 
-By providing essential healthcare services, Adamu is making a positive impact on the community, bringing smiles and health to the people of Akwanga and beyond. This selfless act demonstrates his leadership qualities and vision for a healthier, more prosperous society.
+      <div class="mySlides fade">
+        <img src="images/IGP-with-A.A.SULE.jpg" alt="">
+        <div class="caption">Engagement with Governor A.A. Sule on youth development and public safety in Nasarawa State.</div>
+      </div>
 
-October 
-2nd 2025
+      <div class="mySlides fade">
+        <img src="images/youth-Empowerment.jpg" alt="">
+        <div class="caption">Youth empowerment and leadership development — creating opportunities for future generations.</div>
+      </div>
 
-By, A4G MEDIA TEAM</div>
+      <div class="mySlides fade">
+        <img src="images/IGP-AND-HIS-WIFE.jpg" alt="">
+        <div class="caption">IGP Adamu with his wife, a symbol of unity and shared vision for service to humanity.</div>
+      </div>
+
+      <!-- Controls -->
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
     </div>
 
-    <div class="mySlides fade">
-      <img src="images/Comsn.jfif" alt="Meeting with Community">
-      <div class="caption">The commissioning of R T D I G P MUHAMMAD ABUBAKAR ADAMU offices 1 and 2 at UNGWAN JABA LAFIA . By G7 networks. 
-
-Under the leadership of Alh Idris (Adon Garin Akurba)</div>
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1,1)"></span>
+      <span class="dot" onclick="currentSlide(2,1)"></span>
+      <span class="dot" onclick="currentSlide(3,1)"></span>
+      <span class="dot" onclick="currentSlide(4,1)"></span>
     </div>
-
-    <div class="mySlides fade">
-      <img src="images/med.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Muhammad Abubakar Adamu CFR Flags Off Free Medical Outreach in Akwanga
-
-Akwanga, Nasarawa State – October 2, 2025:
-In a remarkable show of compassion and community service, former Inspector General of Police, Muhammad Abubakar Adamu CFR, NPM, mni, alongside his wife, Hajiya Rukaiya Adamu, flagged off a free medical outreach and drug distribution program in Akwanga, Nasarawa State.
-
-The initiative, aimed at supporting vulnerable groups including women, children, and the elderly, drew widespread appreciation from the local community and stakeholders. Distinguished personalities such as Dan Galadima, Barrister Musa Hussaini, Alhaji Abubakar Sandaji (Turakin Lafia), and Alhaji Tanimu Tancy, among other prominent figures, were in attendance to show their support.
-
-This outreach is part of Adamu’s ongoing commitment to giving back to society and improving the lives of the underserved. By providing essential healthcare services and free medications, the initiative brings much-needed relief to those who often struggle to access quality healthcare.
-
-Speaking at the event, Adamu emphasized the importance of community health as a foundation for development.</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/med2.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Residents of Akwanga expressed gratitude for the gesture, describing it as timely and impactful.
-
-This selfless initiative highlights Muhammad Abubakar Adamu’s leadership, empathy, and vision for a healthier and more prosperous society. His actions continue to inspire positive change and reaffirm his role as a community leader beyond public office.</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Consult7.jfif" alt="Youth Empowerment Program">
-      <div class="caption">With Hon. Danladi Halilu Envuluanza</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Consult8.jfif" alt="Youth Empowerment Program">
-      <div class="caption">IGP ON HIS WAY TO DOMA</div>
-    </div>
-     <div class="mySlides fade">
-      <img src="images/With-Mr.President.jpg" alt="Youth Empowerment Program">
-      <div class="caption">IGP Welcome mr. President </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/consult11.jfif" alt="Youth Empowerment Program">
-      <div class="caption">CONSULTATION VISIT TO DOMA LOCAL GOVERNMENT.
-
-As part of our ongoing consultation, our principal, Muhammad Abubakar Adamu CFR, NPM, his 7th visit to Doma Local Government. The purpose of the visit was to engage with all the ward executives in Doma.
-
-We were warmly received by the good people of Doma, who reaffirmed that Rtd IGP Adamu is their own son. They expressed their love and assured their continued support for him until he achieves his goal of becoming the next Governor of Nasarawa State.
-
-October 
-1st 2025
-
-Asadullah 
-Chief Medi </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Consult4.jfif" alt="Youth Empowerment Program">
-      <div class="caption">CONSULTATION VISIT TO DOMA LOCAL GOVERNMENT.
-
-As part of our ongoing consultation, our principal, Muhammad Abubakar Adamu CFR, NPM, his 7th visit to Doma Local Government. The purpose of the visit was to engage with all the ward executives in Doma.
-
-We were warmly received by the good people of Doma, who reaffirmed that Rtd IGP Adamu is their own son. They expressed their love and assured their continued support for him until he achieves his goal of becoming the next Governor of Nasarawa State.
-
-October 
-1st 2025
-
-Asadullah 
-Chief Medi</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Nasseggon.jfif" alt="Youth Empowerment Program">
-      <div class="caption">September 30th, 2025
-
-Today, Retired IGP Abubakar Muhammad Adamu, in the company of respected community leaders and prominent personalities, paid a consultative visit to Nasarawa Eggon.
-
-The visit was aimed at engaging with the Local Government and Ward Executives to strengthen relationships, deepen unity, and foster mutual understanding.
-
-During the interactive session, Rtd IGP Abubakar Muhammad Adamu warmly reaffirmed that Nasarawa Eggon remains his home, expressing his unwavering love and appreciation for the people, just as they have continued to show love and support for him.
-
-The discussion focused on critical developmental strategies and practical steps to advance the progress of Nasarawa State, should Almighty Allah grant him the opportunity to serve as the Next governor of our dear nasarawa state.
-
-Asadullah.
-Chief Media </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/atnasseggon4.jfif" alt="Youth Empowerment Program">
-      <div class="caption">IGP at Nasarawaeggon</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/atnasseggon.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Sandaji support IGP at Nasarawaeggon </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/consult11.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Youth </div>
-    </div>   
-    
-    <div class="mySlides fade">
-      <img src="images/consult10.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Supporter </div>
-    </div>
-  </section>
-  <!-- SLIDESHOW -->
-   <section>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/with-the-President.jpg" alt="Campaign Event">
-      <div class="caption">with the President</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/meeting-with-the-Commnity.jpg" alt="Meeting with Community">
-      <div class="caption">Meeting with Community</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/youth-Empowerment.jpg" alt="Youth Empowerment Program">
-      <div class="caption">Youth Empowerment Program</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/poster.jfif" alt="Youth Empowerment Program">
-      <div class="caption">IGP 2027 INSHA ALLAH</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/With Abd.jpg" alt="Youth Empowerment Program">
-      <div class="caption">With Hon. Danladi Halilu Envuluanza</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Listening.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Always listening</div>
-    </div>
-     <div class="mySlides fade">
-      <img src="images/IGP77.jpg" alt="Youth Empowerment Program">
-      <div class="caption">Youth Support </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/Commu2.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Youth </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/AT-FOOTBALL-FIELD.jpg" alt="Youth Empowerment Program">
-      <div class="caption">AT THE FOOTBALL FIELD </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/NASARAWA TEAM.jpg" alt="Youth Empowerment Program">
-      <div class="caption">WITH NASARAWA TEAM </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/IGP-AND-HIS-WIFE.jpg" alt="Youth Empowerment Program">
-      <div class="caption">IGP with his dear wife</div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/IGPAND.jpg" alt="Youth Empowerment Program">
-      <div class="caption">IGP and His dear life </div>
-    </div>
-    <div class="mySlides fade">
-      <img src="images/SPORT-WITH-GOVERNOR.jpg" alt="Youth Empowerment Program">
-      <div class="caption">Youth </div>
-    </div>    
-<div class="mySlides fade">
-      <img src="images/Community.jfif" alt="Youth Empowerment Program">
-      <div class="caption">Supporter </div>
-    </div>
-</section>
-    <!-- Arrows -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-
-  <!-- Dots -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(0)"></span>
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-  </div>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 IGP Mohammad Abubakar ADAMU Campaign | All Rights Reserved</p>
+    <p>&copy; 2025 IGP Mohammad Abubakar Adamu Campaign | All Rights Reserved</p>
   </footer>
 
   <!-- JS -->
-  <script src="script.js"></script>
+  <script>
+    let slideIndex = [1, 1];
+    let slideId = ["slideshow1", "slideshow2"];
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function currentSlide(n, no) {
+      showSlides(slideIndex[no] = n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let slides = document.getElementById(slideId[no]).getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot-container")[no].getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex[no] = 1 }
+      if (n < 1) { slideIndex[no] = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      slides[slideIndex[no]-1].style.display = "block";
+      dots[slideIndex[no]-1].classList.add("active");
+    }
+
+    // Auto slide every 5 seconds
+    setInterval(() => {
+      plusSlides(1, 0);
+      plusSlides(1, 1);
+    }, 5000);
+  </script>
 </body>
 </html>
