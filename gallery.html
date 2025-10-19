@@ -15,7 +15,7 @@
     <!-- FIRST SLIDESHOW -->
     <div class="slideshow-container" id="slideshow1">
       <!-- 25 IMAGES SECTION 1 -->
-      <div class="mySlides fade"><img src="images/poster.jfif"><div class="caption">Official Campaign Poster</div></div>
+      <div class="mySlides fade"><img src="images/poster.jfif"><div class="caption"><h3></h3>Official Campaign Poster</h3> <p>This poster represents the start of a visionary movement for unity and progress.</p></P></div></div>
       <div class="mySlides fade"><img src="images/with-the-President.jpg"><div class="caption">Meeting with the President</div></div>
       <div class="mySlides fade"><img src="images/IGP-with-A.A.SULE.jpg"><div class="caption">With Governor A.A Sule</div></div>
       <div class="mySlides fade"><img src="images/APC2.JPG"><div class="caption">APC Unity Event</div></div>
@@ -99,7 +99,8 @@
     dots.forEach(dot => dot.classList.remove("active"));
     dots[slideIndex - 1].classList.add("active");
 
-    setTimeout(showSlides, 10000); // Auto-change every 10s
+    // Change every 5 seconds
+    setTimeout(showSlides, 5000);
   }
 
   function currentSlide(n) {
@@ -109,6 +110,8 @@
 
   showSlides();
 </script>
+
 </body>
+
 
 
