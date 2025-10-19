@@ -60,12 +60,18 @@
     .mySlides {
       display: none;
       width: 100%;
+      animation: fade 1.5s ease-in-out;
     }
 
     .mySlides img {
       width: 100%;
       height: auto;
       border-radius: 10px;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
     }
 
     .caption {
@@ -171,65 +177,89 @@
 
   <!-- FIRST SLIDESHOW -->
   <div class="slideshow-container" id="slideshow1">
-    <div class="mySlides fade">
-      <img src="images/poster.jfif" alt="Campaign Poster">
-      <div class="caption">Official Campaign Poster</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/with-the-President.jpg" alt="With President">
-      <div class="caption">Meeting with the President</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/IGP-with-A.A.SULE.jpg" alt="With Governor Sule">
-      <div class="caption">With Governor A.A Sule</div>
-    </div>
+    <!-- 25 IMAGES SECTION 1 -->
+    <div class="mySlides fade"><img src="images/poster.jfif"><div class="caption">Official Campaign Poster</div></div>
+    <div class="mySlides fade"><img src="images/with-the-President.jpg"><div class="caption">Meeting with the President</div></div>
+    <div class="mySlides fade"><img src="images/IGP-with-A.A.SULE.jpg"><div class="caption">With Governor A.A Sule</div></div>
+    <div class="mySlides fade"><img src="images/APC2.JPG"><div class="caption">APC Unity Event</div></div>
+    <div class="mySlides fade"><img src="images/AT-FOOTBALL-FIELD.jpg"><div class="caption">Community Football Support</div></div>
+    <div class="mySlides fade"><img src="images/Commu2.jfif"><div class="caption">Community Engagement</div></div>
+    <div class="mySlides fade"><img src="images/Commu3.jfif"><div class="caption">Community Meeting</div></div>
+    <div class="mySlides fade"><img src="images/Community.jfif"><div class="caption">Unity with People</div></div>
+    <div class="mySlides fade"><img src="images/Consult1.jfif"><div class="caption">Consultation Visit</div></div>
+    <div class="mySlides fade"><img src="images/Consult4.jfif"><div class="caption">Consultation Session</div></div>
+    <div class="mySlides fade"><img src="images/Consult5.jfif"><div class="caption">Dialogue with Stakeholders</div></div>
+    <div class="mySlides fade"><img src="images/Consult6.jfif"><div class="caption">Strategic Consultation</div></div>
+    <div class="mySlides fade"><img src="images/Consult7.jfif"><div class="caption">Engaging the Youth</div></div>
+    <div class="mySlides fade"><img src="images/IGP-AND-HIS-WIFE.jpg"><div class="caption">With His Wife</div></div>
+    <div class="mySlides fade"><img src="images/IGP10.jpg"><div class="caption">Community Event</div></div>
+    <div class="mySlides fade"><img src="images/IGP18.jpg"><div class="caption">Campaign Ground</div></div>
+    <div class="mySlides fade"><img src="images/IGP2.jpg"><div class="caption">Rally Participation</div></div>
+    <div class="mySlides fade"><img src="images/IGP6.jpg"><div class="caption">Town Hall Meeting</div></div>
+    <div class="mySlides fade"><img src="images/IGP77.jpg"><div class="caption">Campaign Crowd</div></div>
+    <div class="mySlides fade"><img src="images/IGP9.jpg"><div class="caption">Public Address</div></div>
+    <div class="mySlides fade"><img src="images/IGPAND.jpg"><div class="caption">Leadership in Action</div></div>
+    <div class="mySlides fade"><img src="images/IGPMHD.jpg"><div class="caption">Dedication to Service</div></div>
+    <div class="mySlides fade"><img src="images/Listening.jfif"><div class="caption">Listening to Citizens</div></div>
+    <div class="mySlides fade"><img src="images/Masses-support.jpg"><div class="caption">Masses Support</div></div>
+    <div class="mySlides fade"><img src="images/NASARAWA TEAM.jpg"><div class="caption">With Nasarawa Team</div></div>
 
     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
     <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
   </div>
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1,0)"></span>
-    <span class="dot" onclick="currentSlide(2,0)"></span>
-    <span class="dot" onclick="currentSlide(3,0)"></span>
-  </div>
+
+  <div class="dot-container" id="dots1"></div>
 
   <!-- SECOND SLIDESHOW -->
   <div class="slideshow-container" id="slideshow2">
-    <div class="mySlides fade">
-      <img src="images/med.jfif" alt="Medical Outreach">
-      <div class="caption">Free Medical Outreach – Akwanga</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/NASARAWA TEAM.jpg" alt="Nasarawa Team">
-      <div class="caption">With Nasarawa Team</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="images/Listening.jfif" alt="Listening to Citizens">
-      <div class="caption">Always Listening to the People</div>
-    </div>
+    <!-- 25 IMAGES SECTION 2 -->
+    <div class="mySlides fade"><img src="images/Nasseggon.jfif"><div class="caption">Rally at Nasseggon</div></div>
+    <div class="mySlides fade"><img src="images/SPORT-WITH-GOVERNOR.jpg"><div class="caption">Sports Event</div></div>
+    <div class="mySlides fade"><img src="images/With Abd.jpg"><div class="caption">With Supporters</div></div>
+    <div class="mySlides fade"><img src="images/atnasseggon.jfif"><div class="caption">Nasseggon Interaction</div></div>
+    <div class="mySlides fade"><img src="images/atnasseggon2.jfif"><div class="caption">Community Visit</div></div>
+    <div class="mySlides fade"><img src="images/atnasseggon3.jfif"><div class="caption">Empowerment Outreach</div></div>
+    <div class="mySlides fade"><img src="images/atnasseggon4.jfif"><div class="caption">Local Event</div></div>
+    <div class="mySlides fade"><img src="images/campaign-event.jpg"><div class="caption">Major Campaign Event</div></div>
+    <div class="mySlides fade"><img src="images/consult9.jfif"><div class="caption">Consultation Forum</div></div>
+    <div class="mySlides fade"><img src="images/consult10.jfif"><div class="caption">Strategic Meeting</div></div>
+    <div class="mySlides fade"><img src="images/consult11.jfif"><div class="caption">Team Discussion</div></div>
+    <div class="mySlides fade"><img src="images/consult12.jfif"><div class="caption">Community Mobilization</div></div>
+    <div class="mySlides fade"><img src="images/med.jfif"><div class="caption">Free Medical Outreach</div></div>
+    <div class="mySlides fade"><img src="images/med2.jfif"><div class="caption">Health Support Program</div></div>
+    <div class="mySlides fade"><img src="images/meeting-with-the-Commnity.jpg"><div class="caption">Meeting with the Community</div></div>
+    <div class="mySlides fade"><img src="images/whenIG.jpg"><div class="caption">Campaign Strategy Meeting</div></div>
+    <div class="mySlides fade"><img src="images/youth-Empowerment.jpg"><div class="caption">Youth Empowerment</div></div>
+    <div class="mySlides fade"><img src="images/youth-Health-Empowerment.jpg2.jpg"><div class="caption">Youth Health Empowerment</div></div>
 
     <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
   </div>
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1,1)"></span>
-    <span class="dot" onclick="currentSlide(2,1)"></span>
-    <span class="dot" onclick="currentSlide(3,1)"></span>
-  </div>
+
+  <div class="dot-container" id="dots2"></div>
 
   <footer style="text-align:center; padding:1rem; background:#005f2f; color:white;">
     &copy; 2025 IGP Mohammad Abubakar Adamu Campaign | All Rights Reserved
   </footer>
 
   <script>
+    // Initialize slide indexes
     let slideIndex = [1, 1];
     let slideId = ["slideshow1", "slideshow2"];
-    showSlides(1, 0);
-    showSlides(1, 1);
+    let dotContainerIds = ["dots1", "dots2"];
+
+    slideId.forEach((id, i) => {
+      const slides = document.querySelectorAll(`#${id} .mySlides`);
+      const dotsContainer = document.getElementById(dotContainerIds[i]);
+      dotsContainer.innerHTML = "";
+      slides.forEach((_, j) => {
+        const dot = document.createElement("span");
+        dot.className = "dot";
+        dot.onclick = () => currentSlide(j + 1, i);
+        dotsContainer.appendChild(dot);
+      });
+      showSlides(slideIndex[i], i);
+    });
 
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
@@ -242,7 +272,7 @@
     function showSlides(n, no) {
       let i;
       let slides = document.querySelectorAll(`#${slideId[no]} .mySlides`);
-      let dots = document.querySelectorAll(`.dot-container:nth-of-type(${no + 2}) .dot`);
+      let dots = document.querySelectorAll(`#${dotContainerIds[no]} .dot`);
       if (n > slides.length) { slideIndex[no] = 1 }
       if (n < 1) { slideIndex[no] = slides.length }
       slides.forEach(slide => slide.style.display = "none");
@@ -251,11 +281,11 @@
       dots[slideIndex[no] - 1].classList.add("active");
     }
 
-    // Auto change slides
+    // Auto change slides every 10 seconds
     setInterval(() => {
       plusSlides(1, 0);
       plusSlides(1, 1);
-    }, 5000);
+    }, 10000);
   </script>
 </body>
 </html>
